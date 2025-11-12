@@ -567,7 +567,7 @@ function ResultsTable({ details, currentClasses }) {
                 <tbody>
                   {details.map((item, index) => {
                     const className = currentClasses[item.class_idx] || `Class ${item.class_idx}`;
-                    const showBin = className.toLowerCase() === "chair"; // show bin only for bottles
+                    const showBin = className.toLowerCase() === "chair"; // show bin only for chair
                     return (
                       <tr
                         key={index}
@@ -591,7 +591,7 @@ function ResultsTable({ details, currentClasses }) {
                         <td className="p-2 sm:p-3">
                           {showBin && (
                             <img
-                                src="public/assets/bin2.jpg"
+                                src="./public/assets/bin2.jpg"
                                 alt="Bin"
                                 onError={() => console.log("Image failed to load")}
                                 className="w-6 h-6 sm:w-8 sm:h-8"
