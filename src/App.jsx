@@ -530,7 +530,7 @@ function ResultsTable({ details, currentClasses }) {
     "cup": "./assets/bin2.jpg",
     "couch": "./assets/bin2.jpg",
     "sofa": "./assets/bin2.jpg",
-    "tv": "./assets/bin1.jpg",
+    "tv": "./assets/bin2.jpg",
     "person": "./assets/finger.png",
     // Add more class-image mappings here if needed
   };
