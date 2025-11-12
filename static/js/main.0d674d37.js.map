@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/main.0d674d37.js","mappings":"mBACA,IAAIA,EAASC,QAAQ,iBAErBC,OAAOC,QAAUH,C","sources":["index.js"],"sourcesContent":["'use strict';\nvar parent = require('../../web/url');\n\nmodule.exports = parent;\n"],"names":["parent","require","module","exports"],"sourceRoot":""}
