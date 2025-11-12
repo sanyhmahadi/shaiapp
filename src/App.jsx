@@ -523,7 +523,7 @@ function ModelStatus({ warnUpTime, inferenceTime, statusMsg, statusColor }) {
 function ResultsTable({ details, currentClasses }) {
   const binImages = {
     "chair": "./assets/bin2.jpg",
-    "potted plant": "/assets/bin3.png",
+    "potted plant": "./assets/bin3.png",
     // Add more class-image mappings here if needed
   };
 
