@@ -591,7 +591,7 @@ function ResultsTable({ details, currentClasses }) {
                         <td className="p-2 sm:p-3">
                           {showBin && (
                             <img
-                                src="/assets/bin2.jpg"
+                                src="./assets/bin2.jpg"
                                 alt="Bin"
                                 onError={() => console.log("Image failed to load")}
                                 className="w-6 h-6 sm:w-8 sm:h-8"
