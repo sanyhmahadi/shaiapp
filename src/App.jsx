@@ -521,6 +521,12 @@ function ModelStatus({ warnUpTime, inferenceTime, statusMsg, statusColor }) {
   );
 }
 function ResultsTable({ details, currentClasses }) {
+  const binImages = {
+    "chair": "./assets/bin2.jpg",
+    "potted plant": "/assets/bin3.png",
+    // Add more class-image mappings here if needed
+  };
+
   return (
     <div className="container bg-gray-800 rounded-xl shadow-lg p-3 sm:p-4 mb-4 sm:mb-6">
       <details className="text-gray-200 group">
@@ -567,7 +573,8 @@ function ResultsTable({ details, currentClasses }) {
                 <tbody>
                   {details.map((item, index) => {
                     const className = currentClasses[item.class_idx] || `Class ${item.class_idx}`;
-                    const showBin = className.toLowerCase() === "chair"; // show bin only for chair
+                    const imageSrc = binImages[className.toLowerCase()];
+
                     return (
                       <tr
                         key={index}
@@ -589,12 +596,12 @@ function ResultsTable({ details, currentClasses }) {
                           </div>
                         </td>
                         <td className="p-2 sm:p-3">
-                          {showBin && (
+                          {imageSrc && (
                             <img
-                                src="./assets/bin2.jpg"
-                                alt="Bin"
-                                onError={() => console.log("Image failed to load")}
-                                className="w-6 h-6 sm:w-8 sm:h-8"
+                              src={imageSrc}
+                              alt={`${className} bin`}
+                              onError={() => console.log("Image failed to load")}
+                              className="w-6 h-6 sm:w-8 sm:h-8"
                             />
                           )}
                         </td>
@@ -610,7 +617,6 @@ function ResultsTable({ details, currentClasses }) {
     </div>
   );
 }
-
 
 function App() {
   const [processingStatus, setProcessingStatus] = useState({
