@@ -524,6 +524,12 @@ function ResultsTable({ details, currentClasses }) {
   const binImages = {
     "chair": "./assets/bin2.jpg",
     "potted plant": "./assets/bin3.png",
+    "table": "./assets/bin2.jpg",
+    "bottle": "./assets/bin2.jpg",
+    "glass": "./assets/bin2.jpg",
+    "cup": "./assets/bin2.jpg",
+    "couch": "./assets/bin2.jpg",
+    "sofa": "./assets/bin2.jpg",
     // Add more class-image mappings here if needed
   };
 
