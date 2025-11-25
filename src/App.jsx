@@ -40,8 +40,10 @@ function SettingsPanel({
       </h2>
 
       <div className="mb-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-          <div className="flex flex-col">
+        {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3"> */}
+          <div className="flex justify-center gap-6 flex-wrap">
+
+          {/* <div className="flex flex-col">
             <label className="text-gray-300 mb-1 text-sm font-medium">
               Backend:
             </label>
@@ -58,7 +60,7 @@ function SettingsPanel({
               <option value="wasm">Wasm (CPU)</option>
               <option value="webgpu">WebGPU</option>
             </select>
-          </div>
+          </div> */}
 
           <div className="flex flex-col">
             <label className="text-gray-300 mb-1 text-sm font-medium">
@@ -91,8 +93,9 @@ function SettingsPanel({
       </div>
 
       <div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-          <div className="flex flex-col">
+        {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3"> */}
+          <div className="flex justify-center gap-6 flex-wrap">
+          {/* <div className="flex flex-col">
             <label className="text-gray-300 mb-1 text-sm font-medium">
               Classes:
             </label>
@@ -118,9 +121,9 @@ function SettingsPanel({
                 </option>
               ))}
             </select>
-          </div>
+          </div> */}
 
-          <div className="flex flex-col">
+          {/* <div className="flex flex-col">
             <label className="text-gray-300 mb-1 text-sm font-medium">
               Camera:
             </label>
@@ -139,7 +142,7 @@ function SettingsPanel({
                 ))
               )}
             </select>
-          </div>
+          </div> */}
 
           <div className="flex flex-col">
             <label className="text-gray-300 mb-1 text-sm font-medium">
@@ -521,17 +524,22 @@ function ModelStatus({ warnUpTime, inferenceTime, statusMsg, statusColor }) {
   );
 }
 function ResultsTable({ details, currentClasses }) {
+  const [selectedImage, setSelectedImage] = useState(null);
+  
   const binImages = {
-    "chair": "./assets/bin2.jpg",
-    "potted plant": "./assets/bin3.png",
-    "table": "./assets/bin2.jpg",
-    "bottle": "./assets/bin2.jpg",
-    "glass": "./assets/bin2.jpg",
-    "cup": "./assets/bin2.jpg",
-    "couch": "./assets/bin2.jpg",
-    "sofa": "./assets/bin2.jpg",
-    "tv": "./assets/bin2.jpg",
-    "person": "./assets/finger.png",
+    "chair": "./assets/POLSTREDE_MOEBLER.jpg",
+    "table": "./assets/POLSTREDE_MOEBLER.jpg",
+    "bottle": "./assets/HAARD_PLAST.jpg",
+    "glass": "./assets/GLAS.jpg",
+    "cup": "./assets/GLAS.jpg",
+    "couch": "./assets/POLSTREDE_MOEBLER.jpg",
+    "sofa": "./assets/POLSTREDE_MOEBLER.jpg",
+    "tv": "./assets/ELEKTRONIK.jpg",
+    "person": "./assets/nothing_to_do.jpg",
+    "toilet": "./assets/SANITET.jpg",
+    "hair drier": "./assets/ELEKTRONIK.jpg",
+    "laptop": "./assets/ELEKTRONIK.jpg",
+    "bed": "./assets/POLSTREDE_MOEBLER.jpg",
     // Add more class-image mappings here if needed
   };
 
@@ -608,8 +616,8 @@ function ResultsTable({ details, currentClasses }) {
                             <img
                               src={imageSrc}
                               alt={`${className} bin`}
-                              onError={() => console.log("Image failed to load")}
-                              className="w-6 h-6 sm:w-8 sm:h-8"
+                              className="w-6 h-6 sm:w-8 sm:h-8 cursor-pointer"
+                              onClick={() => setSelectedImage(imageSrc)}
                             />
                           )}
                         </td>
@@ -622,6 +630,19 @@ function ResultsTable({ details, currentClasses }) {
           )}
         </div>
       </details>
+      {selectedImage && (
+  <div
+    className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"
+    onClick={() => setSelectedImage(null)}
+  >
+    <img
+      src={selectedImage}
+      className="max-w-[90%] max-h-[90%] rounded-lg shadow-lg"
+      alt="Bin full size"
+    />
+  </div>
+)}
+
     </div>
   );
 }
