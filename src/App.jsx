@@ -535,7 +535,7 @@ function ResultsTable({ details, currentClasses }) {
     "couch": "./assets/POLSTREDE_MOEBLER.jpg",
     "sofa": "./assets/POLSTREDE_MOEBLER.jpg",
     "tv": "./assets/ELEKTRONIK.jpg",
-    "person": "./assets/nothing_to_do.jpg",
+    "person": "./assets/grave_yard.jpg",
     "toilet": "./assets/SANITET.jpg",
     "hair drier": "./assets/ELEKTRONIK.jpg",
     "laptop": "./assets/ELEKTRONIK.jpg",
