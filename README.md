@@ -1,4 +1,4 @@
-# SHAI — Smart Human-AI Interface for Sustainable Recycling
+# SHAI — South Harbour AI App for Sustainable Recycling
 
 Welcome to the SHAI App 👋  
 This project is a **student prototype** developed at **Aalborg University (Copenhagen Campus)** as part of the Sustainable Development Lab (Autumn 2025).  
@@ -9,13 +9,23 @@ Our mission is to combine **AI-powered object detection** with **user-centered d
 
 Here’s a quick look at the SHAI App interface:
 
-![SHAI App Preview](./assets/preview.png)
+<div align="center">
+<img src="./readme.png" width="60%" alt="Preview">
+
+<br>
+
+</div>
 
 ## 📱 Visit via QR Code
 
 Scan this QR code to open the SHAI App directly in your browser:
 
-![SHAI QR Code](./assets/qr.png)
+<div align="center">
+<img src="./qr.png" width="60%" alt="QR Scan for visit the website">
+
+<br>
+
+</div>
 
 ---
 
