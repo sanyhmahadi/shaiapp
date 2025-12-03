@@ -44,23 +44,30 @@ export default function About() {
           <strong>Contact:</strong><br />
           Mathias — <a 
             href="mailto:mlyngs24@student.aau.dk" 
-            className="text-violet-400 hover:underline"
+            className="text-green-400 hover:underline"
           >
             mlyngs24@student.aau.dk
           </a>
           <br />
           Anders — <a 
             href="mailto:ahaggq24@student.aau.dk" 
-            className="text-violet-400 hover:underline"
+            className="text-green-400 hover:underline"
           >
             ahaggq24@student.aau.dk
           </a>
           <br />
           Sany — <a 
             href="mailto:msany24@student.aau.dk" 
-            className="text-violet-400 hover:underline"
+            className="text-green-400 hover:underline"
           >
             msany24@student.aau.dk
+          </a> | <a 
+            href="https://github.com/sanyhmahadi" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-green-400 hover:underline"
+          >
+            GitHub Profile
           </a>
           </p>
 
@@ -121,12 +128,20 @@ export default function About() {
         ahaggq24@student.aau.dk
       </a>
       <br />
-      Sany — <a 
-        href="mailto:msany24@student.aau.dk" 
-        className="text-green-400 hover:underline"
-      >
-        msany24@student.aau.dk
-      </a>
+      Sany — 
+          <a 
+            href="mailto:msany24@student.aau.dk" 
+            className="text-green-400 hover:underline"
+          >
+            msany24@student.aau.dk
+          </a> | <a 
+            href="https://github.com/sanyhmahadi" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-green-400 hover:underline"
+          >
+            GitHub Profile
+          </a>
     </p>
   </div>
 </div>

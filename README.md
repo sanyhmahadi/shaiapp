@@ -111,5 +111,5 @@ Special thanks to the **South Harbor Waste Management Facility** for their colla
 
 ---
 
-> “Waste is only waste if you waste it.”  
+> “Waste is only waste if you waste it🙄”  
 > — SHAI Team

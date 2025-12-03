@@ -8,8 +8,8 @@ const weekdayNames = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
 
 const initialEvents = [
   // Example events (YYYY-MM-DD)
-  { date: "2025-12-05", title: "Model update: YOLO12s" },
-  { date: "2025-12-08", title: "Live Capture UX review" },
+  { date: "2025-12-05", title: "Re-Use Workshop" },
+  { date: "2025-12-08", title: "Live Articraft Making" },
   { date: "2025-12-15", title: "Deploy new bin images" },
 ];
 
