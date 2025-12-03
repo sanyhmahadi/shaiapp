@@ -65,14 +65,15 @@ This project is inspired by:
 
 ## 👩‍💻 Team
 
-- **Mathias Lind** — Project Lead & Coordination  
-- **Anders Kassa Häggquist** — Project Lead & Coordination  
-- **Mahadi Hasan Sany** — Prototype Development & Coordination  
+- **Mahadi Hasan Sany** — Prototype Development & Coordination 
+- **Mathias Lind** — Coordination  
+- **Anders Kassa Häggquist** — Coordination   
 
 📧 Contact:  
+- Sany — [msany24@student.aau.dk](mailto:msany24@student.aau.dk) 
 - Mathias — [mlyngs24@student.aau.dk](mailto:mlyngs24@student.aau.dk)  
 - Anders — [ahaggq24@student.aau.dk](mailto:ahaggq24@student.aau.dk)  
-- Sany — [msany24@student.aau.dk](mailto:msany24@student.aau.dk)  
+ 
 
 ---
 
