@@ -560,12 +560,12 @@ function ResultsTable({ details, currentClasses }) {
     "orange": "./assets/MADAFFALD.jpg",
     "broccoli": "./assets/MADAFFALD.jpg",
     "cake": "./assets/MADAFFALD.jpg",
-    // "toothbrush": "./assets/.jpg",
-    // "vase": "./assets/.jpg",
-    // "book": "./assets/.jpg",
-    // "teddybear": "./assets/.jpg",
-    // "knife": "./assets/.jpg",
-    // "bagpack": "./assets/.jpg",
+    "toothbrush": "./assets/pvc.jpg",
+    "vase": "./assets/ceramic_glass.jpg",
+    "book": "./assets/book.jpg",
+    "teddybear": "./assets/soft_plastic.jpg",
+    "knife": "./assets/METAL_2.jpg",
+    "bagpack": "./assets/soft_plastic.jpg",
     // Add more class-image mappings here if needed
   };
 
