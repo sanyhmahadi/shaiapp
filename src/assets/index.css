@@ -11,9 +11,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 body {
+  @apply leading-relaxed tracking-wide font-bold;
   display: flex;
-  justify-content: center;
-  text-align: center;  
-  @apply leading-relaxed tracking-wide font-bold
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
 }
 

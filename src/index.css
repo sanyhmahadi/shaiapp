@@ -1,0 +1,4 @@
+/* Tailwind base assumed; add utilities if needed */
+.btn-secondary {
+  @apply px-3 py-2 rounded-md bg-gray-700 hover:bg-gray-600 text-gray-100 text-sm transition-colors;
+}

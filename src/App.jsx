@@ -1,9 +1,19 @@
+import { Routes, Route } from "react-router-dom";
+import HeaderNav from "./components/HeaderNav.jsx";
+
 import "./assets/App.css";
 import { useEffect, useRef, useState, useCallback } from "react";
 import { model_loader } from "./utils/model_loader";
 import { inference_pipeline } from "./utils/inference_pipeline";
 import { render_overlay } from "./utils/render_overlay";
 import classes from "./utils/yolo_classes.json";
+
+
+import Home from "./pages/Home.jsx";
+import About from "./pages/About.jsx";
+import Calendar from "./pages/Calendar.jsx";
+
+
 
 const MODEL_CONFIG = {
   input_shape: [1, 3, 640, 640],
@@ -144,7 +154,7 @@ function SettingsPanel({
             </select>
           </div> */}
 
-          <div className="flex flex-col">
+          {/* <div className="flex flex-col">
             <label className="text-gray-300 mb-1 text-sm font-medium">
               Image Type:
             </label>
@@ -159,7 +169,7 @@ function SettingsPanel({
               <option value="dynamic">Dynamic</option>
               <option value="zeroPad">Zero Pad</option>
             </select>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
@@ -647,7 +657,7 @@ function ResultsTable({ details, currentClasses }) {
   );
 }
 
-function App() {
+function AppLayout() {
   const [processingStatus, setProcessingStatus] = useState({
     warnUpTime: 0,
     inferenceTime: 0,
@@ -1094,6 +1104,7 @@ function App() {
           Application
         </span>
       </h1>
+      
       <SettingsPanel
         backendSelectorRef={backendSelectorRef}
         modelSelectorRef={modelSelectorRef}
@@ -1128,7 +1139,7 @@ function App() {
         handle_AddClassesFile={handle_AddClassesFile}
         activeFeature={activeFeature}
       />
-{/* 
+        {/* 
       <ModelStatus
         warnUpTime={processingStatus.warnUpTime}
         inferenceTime={processingStatus.inferenceTime}
@@ -1144,4 +1155,18 @@ function App() {
   );
 }
 
-export default App;
+export default function App() {
+  return (
+    <div className="min-h-screen flex flex-col bg-gray-900 text-gray-100">
+      <HeaderNav />
+      <div className="flex-1 container mx-auto px-3 sm:px-4">
+        <Routes>
+          <Route path="/" element={<AppLayout />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/calendar" element={<Calendar />} />
+        </Routes>
+      </div>
+    </div>
+
+  );
+}
