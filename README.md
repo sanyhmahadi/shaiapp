@@ -93,6 +93,36 @@ Even small local actions can inspire global change 🌍.
 - **YOLO Models** — Object detection  
 - **JavaScript (ES6+)** — Core logic  
 
+
+---
+## 🛠️ Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/nomi30701/yolo-object-detection-onnxruntime-web.git
+   ```
+
+2. **Navigate to project directory**
+
+   ```bash
+   cd yolo-object-detection-onnxruntime-web
+   ```
+
+3. **Install dependencies**
+
+   ```bash
+   yarn install
+   ```
+
+4. **Run Development Server**
+
+   ```bash
+   yarn dev
+   ```
+
+5. **Build for Production**
+   ```bash
 ---
 
 ## 📅 Future Perspectives
