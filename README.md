@@ -100,7 +100,7 @@ Even small local actions can inspire global change 🌍.
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/nomi30701/yolo-object-detection-onnxruntime-web.git
+   https://github.com/sanyhmahadi/shaiapp.git
    ```
 
 2. **Navigate to project directory**
