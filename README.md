@@ -106,7 +106,7 @@ Even small local actions can inspire global change 🌍.
 2. **Navigate to project directory**
 
    ```bash
-   cd yolo-object-detection-onnxruntime-web
+   cd shaiapp
    ```
 
 3. **Install dependencies**
@@ -123,6 +123,8 @@ Even small local actions can inspire global change 🌍.
 
 5. **Build for Production**
    ```bash
+   yarn build
+   ```
 ---
 
 ## 📅 Future Perspectives
