@@ -100,7 +100,7 @@ Even small local actions can inspire global change 🌍.
 1. **Clone the repository**
 
    ```bash
-   https://github.com/sanyhmahadi/shaiapp.git
+   git clone https://github.com/sanyhmahadi/shaiapp.git
    ```
 
 2. **Navigate to project directory**
