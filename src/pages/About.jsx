@@ -7,8 +7,16 @@ export default function About() {
 
       {/* English Section */}
       <div className="mb-10">
-        <h3 className="text-lg sm:text-xl font-semibold text-violet-400 mb-2">
+        <h3 className="text-lg sm:text-xl font-semibold text-violet-400 mb-2"> 
+           Our Article Link! — <a 
+            href="https://www.researchgate.net/publication/399857344_SHAI_A_Digital_Nudge_for_Sustainable_Recycling_and_Citizen_Engagement" 
+            className="text-green-400 hover:underline"
+          >
+            Click Here
+          </a>
+          <br/>
           🌍 About Us (English)
+          
         </h3>
         <div className="text-gray-300 text-justify space-y-3">
           <p>
